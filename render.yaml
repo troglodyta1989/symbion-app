@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: symbion
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: STRIPE_SECRET_KEY
+        value: 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
